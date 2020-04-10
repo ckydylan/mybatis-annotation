@@ -1,0 +1,257 @@
+2020-04-10 10:50:15.453[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest], using SpringBootContextLoader
+2020-04-10 10:50:15.464[main][main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-10 10:50:15.465[main][main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: MessageMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-10 10:50:15.762[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.niit.mybatisannotationdemo.MybatisAnnotationDemoApplication for test class com.niit.mybatisannotationdemo.mapper.MessageMapperTest
+2020-04-10 10:50:15.945[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-10 10:50:15.979[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73db4768, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@71b3bc45, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@a8c1f44, org.springframework.test.context.support.DirtiesContextTestExecutionListener@150ab4ed, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3c435123, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50fe837a, org.springframework.test.context.event.EventPublishingTestExecutionListener@3a62c01e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a8fa663, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ce33a58, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@78a287ed, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@546ccad7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5357c287]
+2020-04-10 10:50:16.365[main][main] INFO  c.n.m.mapper.MessageMapperTest - Starting MessageMapperTest on LAPTOP-L1MN2SAL with PID 27956 (started by Lenovo in D:\Projects\springbootProjects\mybatis-annotation-demo)
+2020-04-10 10:50:16.366[main][main] DEBUG c.n.m.mapper.MessageMapperTest - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-10 10:50:16.366[main][main] INFO  c.n.m.mapper.MessageMapperTest - No active profile set, falling back to default profiles: default
+2020-04-10 10:50:16.966[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-10 10:50:17.704[main][main] INFO  c.n.m.mapper.MessageMapperTest - Started MessageMapperTest in 1.681 seconds (JVM running for 3.863)
+2020-04-10 10:50:18.408[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-10 10:50:19.476[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-10 10:50:19.485[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) 
+2020-04-10 10:50:19.520[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==> Parameters: 樱花(String), 春天(String)
+2020-04-10 10:50:19.732[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - <==    Updates: 1
+2020-04-10 10:50:19.734[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入数据数：1
+2020-04-10 10:50:19.752[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==>  Preparing: select * from message 
+2020-04-10 10:50:19.753[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==> Parameters: 
+2020-04-10 10:50:19.883[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - <==      Total: 12
+2020-04-10 10:50:19.887[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=32, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.887[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=33, msgText=apple, msgSummary=水果)
+2020-04-10 10:50:19.888[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=34, msgText=orange, msgSummary=水果)
+2020-04-10 10:50:19.888[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=35, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.888[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=36, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.888[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=37, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.888[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=38, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.888[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=39, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.889[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=40, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.889[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=41, msgText=apple, msgSummary=水果)
+2020-04-10 10:50:19.889[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=42, msgText=orange, msgSummary=水果)
+2020-04-10 10:50:19.889[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=43, msgText=樱花, msgSummary=春天)
+2020-04-10 10:50:19.896[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==>  Preparing: select * from message where msg_id=? 
+2020-04-10 10:50:19.897[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==> Parameters: 1(Integer)
+2020-04-10 10:50:19.901[main][main] DEBUG c.n.m.m.MessageMapper.selectById - <==      Total: 0
+2020-04-10 10:50:19.901[main][main] INFO  c.n.m.mapper.MessageMapperTest - id为1的数据：null
+2020-04-10 10:50:19.909[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==>  Preparing: delete from message where msg_id=? 
+2020-04-10 10:50:19.909[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==> Parameters: 1(Integer)
+2020-04-10 10:50:19.913[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - <==    Updates: 0
+2020-04-10 10:50:19.913[main][main] INFO  c.n.m.mapper.MessageMapperTest - 删除的数据数：0
+2020-04-10 10:50:19.963[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==>  Preparing: update message set msg_text = ? , msg_summary = ? where msg_id = ? 
+2020-04-10 10:50:19.964[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==> Parameters: computer(String), 学校(String), 1(Integer)
+2020-04-10 10:50:19.967[main][main] DEBUG c.n.m.mapper.MessageMapper.update - <==    Updates: 0
+2020-04-10 10:50:19.968[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新的数据条数：0
+2020-04-10 10:50:19.974[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==>  Preparing: update message SET msg_text = ?,msg_summary = ? where msg_id = ? 
+2020-04-10 10:50:19.976[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==> Parameters: hhh(String), (String), 1(Integer)
+2020-04-10 10:50:19.978[main][main] DEBUG c.n.m.m.MessageMapper.updateText - <==    Updates: 0
+2020-04-10 10:50:19.978[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新Text的数据条数：0
+2020-04-10 10:50:19.987[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) , (?,?) 
+2020-04-10 10:50:19.988[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==> Parameters: apple(String), 水果(String), orange(String), 水果(String)
+2020-04-10 10:50:20.035[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - <==    Updates: 2
+2020-04-10 10:50:20.035[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入的数据条数：2
+2020-04-10 10:50:20.059[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-10 10:50:20.079[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-10 10:59:08.821[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest], using SpringBootContextLoader
+2020-04-10 10:59:08.831[main][main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-10 10:59:08.834[main][main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: MessageMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-10 10:59:08.996[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.niit.mybatisannotationdemo.MybatisAnnotationDemoApplication for test class com.niit.mybatisannotationdemo.mapper.MessageMapperTest
+2020-04-10 10:59:09.113[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-10 10:59:09.127[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73db4768, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@71b3bc45, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@a8c1f44, org.springframework.test.context.support.DirtiesContextTestExecutionListener@150ab4ed, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3c435123, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50fe837a, org.springframework.test.context.event.EventPublishingTestExecutionListener@3a62c01e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7a8fa663, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5ce33a58, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@78a287ed, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@546ccad7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5357c287]
+2020-04-10 10:59:09.479[main][main] INFO  c.n.m.mapper.MessageMapperTest - Starting MessageMapperTest on LAPTOP-L1MN2SAL with PID 10748 (started by Lenovo in D:\Projects\springbootProjects\mybatis-annotation-demo)
+2020-04-10 10:59:09.480[main][main] DEBUG c.n.m.mapper.MessageMapperTest - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-10 10:59:09.481[main][main] INFO  c.n.m.mapper.MessageMapperTest - No active profile set, falling back to default profiles: default
+2020-04-10 10:59:09.907[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-10 10:59:10.476[main][main] INFO  c.n.m.mapper.MessageMapperTest - Started MessageMapperTest in 1.304 seconds (JVM running for 2.623)
+2020-04-10 10:59:10.782[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-10 10:59:11.473[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-10 10:59:11.482[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) 
+2020-04-10 10:59:11.520[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==> Parameters: 樱花(String), 春天(String)
+2020-04-10 10:59:11.555[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - <==    Updates: 1
+2020-04-10 10:59:11.557[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入数据数：1
+2020-04-10 10:59:11.570[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==>  Preparing: select * from message 
+2020-04-10 10:59:11.570[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==> Parameters: 
+2020-04-10 10:59:11.605[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - <==      Total: 1
+2020-04-10 10:59:11.609[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=46, msgText=樱花, msgSummary=春天)
+2020-04-10 10:59:11.614[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==>  Preparing: select * from message where msg_id=? 
+2020-04-10 10:59:11.614[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==> Parameters: 1(Integer)
+2020-04-10 10:59:11.616[main][main] DEBUG c.n.m.m.MessageMapper.selectById - <==      Total: 0
+2020-04-10 10:59:11.616[main][main] INFO  c.n.m.mapper.MessageMapperTest - id为1的数据：null
+2020-04-10 10:59:11.622[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==>  Preparing: delete from message where msg_id=? 
+2020-04-10 10:59:11.622[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==> Parameters: 1(Integer)
+2020-04-10 10:59:11.624[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - <==    Updates: 0
+2020-04-10 10:59:11.624[main][main] INFO  c.n.m.mapper.MessageMapperTest - 删除的数据数：0
+2020-04-10 10:59:11.683[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==>  Preparing: update message set msg_text = ? , msg_summary = ? where msg_id = ? 
+2020-04-10 10:59:11.684[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==> Parameters: computer(String), 学校(String), 1(Integer)
+2020-04-10 10:59:11.687[main][main] DEBUG c.n.m.mapper.MessageMapper.update - <==    Updates: 0
+2020-04-10 10:59:11.687[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新的数据条数：0
+2020-04-10 10:59:11.693[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==>  Preparing: update message SET msg_text = ?,msg_summary = ? where msg_id = ? 
+2020-04-10 10:59:11.693[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==> Parameters: hhh(String), (String), 1(Integer)
+2020-04-10 10:59:11.695[main][main] DEBUG c.n.m.m.MessageMapper.updateText - <==    Updates: 0
+2020-04-10 10:59:11.696[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新Text的数据条数：0
+2020-04-10 10:59:11.714[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) , (?,?) 
+2020-04-10 10:59:11.714[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==> Parameters: apple(String), 水果(String), orange(String), 水果(String)
+2020-04-10 10:59:11.747[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - <==    Updates: 2
+2020-04-10 10:59:11.748[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入的数据条数：2
+2020-04-10 10:59:11.763[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-10 10:59:11.798[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-10 11:26:51.989[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest], using SpringBootContextLoader
+2020-04-10 11:26:51.997[main][main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-10 11:26:51.998[main][main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: MessageMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-10 11:26:52.151[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.niit.mybatisannotationdemo.MybatisAnnotationDemoApplication for test class com.niit.mybatisannotationdemo.mapper.MessageMapperTest
+2020-04-10 11:26:52.300[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-10 11:26:52.318[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12dae582, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@239b0f9d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@619bfe29, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b057c8c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1eb6749b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@652a7737, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b7ea70d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2bef51f2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@650eab8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@30f5a68a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1e1d3956, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4f2c9ba6]
+2020-04-10 11:26:52.696[main][main] INFO  c.n.m.mapper.MessageMapperTest - Starting MessageMapperTest on LAPTOP-L1MN2SAL with PID 15472 (started by Lenovo in D:\Projects\springbootProjects\mybatis-annotation-demo)
+2020-04-10 11:26:52.697[main][main] DEBUG c.n.m.mapper.MessageMapperTest - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-10 11:26:52.698[main][main] INFO  c.n.m.mapper.MessageMapperTest - No active profile set, falling back to default profiles: default
+2020-04-10 11:26:53.144[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-10 11:26:53.767[main][main] INFO  c.n.m.mapper.MessageMapperTest - Started MessageMapperTest in 1.408 seconds (JVM running for 2.932)
+2020-04-10 11:26:54.438[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-10 11:26:55.306[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-10 11:26:55.317[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) 
+2020-04-10 11:26:55.352[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==> Parameters: 樱花(String), 春天(String)
+2020-04-10 11:26:55.393[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - <==    Updates: 1
+2020-04-10 11:26:55.395[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入数据数：1
+2020-04-10 11:26:55.434[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==>  Preparing: select * from message 
+2020-04-10 11:26:55.435[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==> Parameters: 
+2020-04-10 11:26:55.507[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - <==      Total: 1
+2020-04-10 11:26:55.511[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=1, msgText=樱花, msgSummary=春天)
+2020-04-10 11:26:55.517[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==>  Preparing: select * from message where msg_id=? 
+2020-04-10 11:26:55.518[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==> Parameters: 1(Integer)
+2020-04-10 11:26:55.520[main][main] DEBUG c.n.m.m.MessageMapper.selectById - <==      Total: 1
+2020-04-10 11:26:55.521[main][main] INFO  c.n.m.mapper.MessageMapperTest - id为1的数据：Message(msgId=1, msgText=樱花, msgSummary=春天)
+2020-04-10 11:26:55.526[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==>  Preparing: delete from message where msg_id=? 
+2020-04-10 11:26:55.527[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==> Parameters: 1(Integer)
+2020-04-10 11:26:55.564[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - <==    Updates: 1
+2020-04-10 11:26:55.565[main][main] INFO  c.n.m.mapper.MessageMapperTest - 删除的数据数：1
+2020-04-10 11:26:55.671[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==>  Preparing: update message set msg_text = ? , msg_summary = ? where msg_id = ? 
+2020-04-10 11:26:55.671[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==> Parameters: computer(String), 学校(String), 1(Integer)
+2020-04-10 11:26:55.673[main][main] DEBUG c.n.m.mapper.MessageMapper.update - <==    Updates: 0
+2020-04-10 11:26:55.674[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新的数据条数：0
+2020-04-10 11:26:55.680[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==>  Preparing: update message SET msg_text = ?,msg_summary = ? where msg_id = ? 
+2020-04-10 11:26:55.681[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==> Parameters: hhh(String), (String), 1(Integer)
+2020-04-10 11:26:55.683[main][main] DEBUG c.n.m.m.MessageMapper.updateText - <==    Updates: 0
+2020-04-10 11:26:55.683[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新Text的数据条数：0
+2020-04-10 11:26:55.693[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) , (?,?) 
+2020-04-10 11:26:55.694[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==> Parameters: apple(String), 水果(String), orange(String), 水果(String)
+2020-04-10 11:26:55.724[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - <==    Updates: 2
+2020-04-10 11:26:55.724[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入的数据条数：2
+2020-04-10 11:26:55.738[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-10 11:26:55.767[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-10 21:20:12.418[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest], using SpringBootContextLoader
+2020-04-10 21:20:12.445[main][main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-10 21:20:12.446[main][main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: MessageMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-10 21:20:12.686[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.niit.mybatisannotationdemo.MybatisAnnotationDemoApplication for test class com.niit.mybatisannotationdemo.mapper.MessageMapperTest
+2020-04-10 21:20:12.808[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-10 21:20:12.832[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@207ea13, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4bff1903, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@62dae540, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5827af16, org.springframework.test.context.transaction.TransactionalTestExecutionListener@654d8173, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@56c9bbd8, org.springframework.test.context.event.EventPublishingTestExecutionListener@630cb4a4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@636e8cc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f79a760, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14f5da2c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@12dae582, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@239b0f9d]
+2020-04-10 21:20:13.174[main][main] INFO  c.n.m.mapper.MessageMapperTest - Starting MessageMapperTest on LAPTOP-L1MN2SAL with PID 22420 (started by Lenovo in D:\Projects\springbootProjects\mybatis-annotation-demo)
+2020-04-10 21:20:13.175[main][main] DEBUG c.n.m.mapper.MessageMapperTest - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-10 21:20:13.175[main][main] INFO  c.n.m.mapper.MessageMapperTest - No active profile set, falling back to default profiles: default
+2020-04-10 21:20:13.687[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-10 21:20:14.451[main][main] INFO  c.n.m.mapper.MessageMapperTest - Started MessageMapperTest in 1.58 seconds (JVM running for 3.305)
+2020-04-10 21:20:15.022[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-10 21:20:15.912[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-10 21:20:15.925[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) 
+2020-04-10 21:20:15.965[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==> Parameters: 樱花(String), 春天(String)
+2020-04-10 21:20:16.046[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - <==    Updates: 1
+2020-04-10 21:20:16.050[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入数据数：1
+2020-04-10 21:20:16.066[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==>  Preparing: select * from message 
+2020-04-10 21:20:16.066[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==> Parameters: 
+2020-04-10 21:20:16.160[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - <==      Total: 2
+2020-04-10 21:20:16.167[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=1, msgText=computer, msgSummary=学校)
+2020-04-10 21:20:16.168[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=3, msgText=樱花, msgSummary=春天)
+2020-04-10 21:20:16.176[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==>  Preparing: select * from message where msg_id=? 
+2020-04-10 21:20:16.176[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==> Parameters: 1(Integer)
+2020-04-10 21:20:16.197[main][main] DEBUG c.n.m.m.MessageMapper.selectById - <==      Total: 1
+2020-04-10 21:20:16.197[main][main] INFO  c.n.m.mapper.MessageMapperTest - id为1的数据：Message(msgId=1, msgText=computer, msgSummary=学校)
+2020-04-10 21:20:16.204[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==>  Preparing: delete from message where msg_id=? 
+2020-04-10 21:20:16.205[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==> Parameters: 1(Integer)
+2020-04-10 21:20:16.240[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - <==    Updates: 1
+2020-04-10 21:20:16.240[main][main] INFO  c.n.m.mapper.MessageMapperTest - 删除的数据数：1
+2020-04-10 21:20:16.297[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==>  Preparing: update message set msg_text = ? , msg_summary = ? where msg_id = ? 
+2020-04-10 21:20:16.298[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==> Parameters: computer(String), 学校(String), 1(Integer)
+2020-04-10 21:20:16.301[main][main] DEBUG c.n.m.mapper.MessageMapper.update - <==    Updates: 0
+2020-04-10 21:20:16.302[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新的数据条数：0
+2020-04-10 21:20:16.306[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==>  Preparing: update message SET msg_text = ?,msg_summary = ? where msg_id = ? 
+2020-04-10 21:20:16.307[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==> Parameters: hhh(String), (String), 1(Integer)
+2020-04-10 21:20:16.308[main][main] DEBUG c.n.m.m.MessageMapper.updateText - <==    Updates: 0
+2020-04-10 21:20:16.309[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新Text的数据条数：0
+2020-04-10 21:20:16.320[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) , (?,?) 
+2020-04-10 21:20:16.321[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==> Parameters: apple(String), 水果(String), orange(String), 水果(String)
+2020-04-10 21:20:16.377[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - <==    Updates: 2
+2020-04-10 21:20:16.377[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入的数据条数：2
+2020-04-10 21:20:16.381[main][main] DEBUG c.n.m.m.M.selectByTextAndSummary - ==>  Preparing: select * from message where msg_text=? or msg_summary=? 
+2020-04-10 21:20:16.382[main][main] DEBUG c.n.m.m.M.selectByTextAndSummary - ==> Parameters: apple(String), 院系(String)
+2020-04-10 21:20:16.384[main][main] DEBUG c.n.m.m.M.selectByTextAndSummary - <==      Total: 1
+2020-04-10 21:20:16.385[main][main] INFO  c.n.m.mapper.MessageMapperTest - Message(msgId=4, msgText=apple, msgSummary=水果)
+2020-04-10 21:20:16.392[main][main] DEBUG c.n.m.m.MessageMapper.selectMessages - ==>  Preparing: SELECT * FROM message WHERE (1=1 AND msg_summary=?) ORDER BY msg_id LIMIT 3 OFFSET 0 
+2020-04-10 21:20:16.392[main][main] DEBUG c.n.m.m.MessageMapper.selectMessages - ==> Parameters: 水果(String)
+2020-04-10 21:20:16.394[main][main] DEBUG c.n.m.m.MessageMapper.selectMessages - <==      Total: 2
+2020-04-10 21:20:16.395[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - ==>  Preparing: SELECT count(1) FROM message WHERE (msg_summary=?) 
+2020-04-10 21:20:16.395[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - ==> Parameters: 水果(String)
+2020-04-10 21:20:16.415[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - <==      Total: 1
+2020-04-10 21:20:16.415[main][main] INFO  c.n.m.mapper.MessageMapperTest - page = Page(currentPage=0, totalPage=1, totalNumber=2, datas=[Message(msgId=4, msgText=apple, msgSummary=水果), Message(msgId=5, msgText=orange, msgSummary=水果)])
+2020-04-10 21:20:16.431[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-10 21:20:16.452[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-10 21:21:09.608[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest], using SpringBootContextLoader
+2020-04-10 21:21:09.615[main][main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-10 21:21:09.616[main][main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.niit.mybatisannotationdemo.mapper.MessageMapperTest]: MessageMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-10 21:21:09.754[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.niit.mybatisannotationdemo.MybatisAnnotationDemoApplication for test class com.niit.mybatisannotationdemo.mapper.MessageMapperTest
+2020-04-10 21:21:09.847[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-10 21:21:09.865[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1623134f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7a527389, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@485a3466, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25748410, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2b43529a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4264b240, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b04476e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5ad10c1a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6bb75258, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@c260bdc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@75e01201, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2783717b]
+2020-04-10 21:21:10.201[main][main] INFO  c.n.m.mapper.MessageMapperTest - Starting MessageMapperTest on LAPTOP-L1MN2SAL with PID 33060 (started by Lenovo in D:\Projects\springbootProjects\mybatis-annotation-demo)
+2020-04-10 21:21:10.201[main][main] DEBUG c.n.m.mapper.MessageMapperTest - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-10 21:21:10.202[main][main] INFO  c.n.m.mapper.MessageMapperTest - No active profile set, falling back to default profiles: default
+2020-04-10 21:21:10.709[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-10 21:21:11.437[main][main] INFO  c.n.m.mapper.MessageMapperTest - Started MessageMapperTest in 1.531 seconds (JVM running for 2.781)
+2020-04-10 21:21:11.756[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-10 21:21:12.434[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-10 21:21:12.444[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) 
+2020-04-10 21:21:12.477[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - ==> Parameters: 樱花(String), 春天(String)
+2020-04-10 21:21:12.604[main][main] DEBUG c.n.m.mapper.MessageMapper.insert - <==    Updates: 1
+2020-04-10 21:21:12.606[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入数据数：1
+2020-04-10 21:21:12.621[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==>  Preparing: select * from message 
+2020-04-10 21:21:12.622[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - ==> Parameters: 
+2020-04-10 21:21:12.665[main][main] DEBUG c.n.m.mapper.MessageMapper.selectAll - <==      Total: 4
+2020-04-10 21:21:12.670[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=3, msgText=樱花, msgSummary=春天)
+2020-04-10 21:21:12.670[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=4, msgText=apple, msgSummary=水果)
+2020-04-10 21:21:12.670[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=5, msgText=orange, msgSummary=水果)
+2020-04-10 21:21:12.671[main][main] INFO  c.n.m.mapper.MessageMapperTest - 查询到的数据：Message(msgId=6, msgText=樱花, msgSummary=春天)
+2020-04-10 21:21:12.679[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==>  Preparing: select * from message where msg_id=? 
+2020-04-10 21:21:12.679[main][main] DEBUG c.n.m.m.MessageMapper.selectById - ==> Parameters: 1(Integer)
+2020-04-10 21:21:12.681[main][main] DEBUG c.n.m.m.MessageMapper.selectById - <==      Total: 0
+2020-04-10 21:21:12.682[main][main] INFO  c.n.m.mapper.MessageMapperTest - id为1的数据：null
+2020-04-10 21:21:12.687[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==>  Preparing: delete from message where msg_id=? 
+2020-04-10 21:21:12.688[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - ==> Parameters: 1(Integer)
+2020-04-10 21:21:12.691[main][main] DEBUG c.n.m.mapper.MessageMapper.delete - <==    Updates: 0
+2020-04-10 21:21:12.692[main][main] INFO  c.n.m.mapper.MessageMapperTest - 删除的数据数：0
+2020-04-10 21:21:12.750[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==>  Preparing: update message set msg_text = ? , msg_summary = ? where msg_id = ? 
+2020-04-10 21:21:12.751[main][main] DEBUG c.n.m.mapper.MessageMapper.update - ==> Parameters: computer(String), 学校(String), 1(Integer)
+2020-04-10 21:21:12.753[main][main] DEBUG c.n.m.mapper.MessageMapper.update - <==    Updates: 0
+2020-04-10 21:21:12.753[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新的数据条数：0
+2020-04-10 21:21:12.758[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==>  Preparing: update message SET msg_text = ?,msg_summary = ? where msg_id = ? 
+2020-04-10 21:21:12.758[main][main] DEBUG c.n.m.m.MessageMapper.updateText - ==> Parameters: hhh(String), (String), 1(Integer)
+2020-04-10 21:21:12.760[main][main] DEBUG c.n.m.m.MessageMapper.updateText - <==    Updates: 0
+2020-04-10 21:21:12.760[main][main] INFO  c.n.m.mapper.MessageMapperTest - 更新Text的数据条数：0
+2020-04-10 21:21:12.771[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==>  Preparing: insert into message (msg_text,msg_summary) values (?,?) , (?,?) 
+2020-04-10 21:21:12.771[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - ==> Parameters: apple(String), 水果(String), orange(String), 水果(String)
+2020-04-10 21:21:12.807[main][main] DEBUG c.n.m.m.MessageMapper.batchInsert - <==    Updates: 2
+2020-04-10 21:21:12.808[main][main] INFO  c.n.m.mapper.MessageMapperTest - 插入的数据条数：2
+2020-04-10 21:21:12.817[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - ==>  Preparing: SELECT count(1) FROM message WHERE (msg_summary=?) 
+2020-04-10 21:21:12.818[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - ==> Parameters: 水果(String)
+2020-04-10 21:21:12.847[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - <==      Total: 1
+2020-04-10 21:21:12.848[main][main] INFO  c.n.m.mapper.MessageMapperTest - count ---- , 4
+2020-04-10 21:21:12.853[main][main] DEBUG c.n.m.m.M.selectByTextAndSummary - ==>  Preparing: select * from message where msg_text=? or msg_summary=? 
+2020-04-10 21:21:12.853[main][main] DEBUG c.n.m.m.M.selectByTextAndSummary - ==> Parameters: apple(String), 院系(String)
+2020-04-10 21:21:12.855[main][main] DEBUG c.n.m.m.M.selectByTextAndSummary - <==      Total: 2
+2020-04-10 21:21:12.856[main][main] INFO  c.n.m.mapper.MessageMapperTest - Message(msgId=4, msgText=apple, msgSummary=水果)
+2020-04-10 21:21:12.856[main][main] INFO  c.n.m.mapper.MessageMapperTest - Message(msgId=7, msgText=apple, msgSummary=水果)
+2020-04-10 21:21:12.862[main][main] DEBUG c.n.m.m.MessageMapper.selectMessages - ==>  Preparing: SELECT * FROM message WHERE (1=1 AND msg_summary=?) ORDER BY msg_id LIMIT 3 OFFSET 0 
+2020-04-10 21:21:12.862[main][main] DEBUG c.n.m.m.MessageMapper.selectMessages - ==> Parameters: 水果(String)
+2020-04-10 21:21:12.865[main][main] DEBUG c.n.m.m.MessageMapper.selectMessages - <==      Total: 3
+2020-04-10 21:21:12.866[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - ==>  Preparing: SELECT count(1) FROM message WHERE (msg_summary=?) 
+2020-04-10 21:21:12.866[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - ==> Parameters: 水果(String)
+2020-04-10 21:21:12.868[main][main] DEBUG c.n.m.mapper.MessageMapper.getCount - <==      Total: 1
+2020-04-10 21:21:12.869[main][main] INFO  c.n.m.mapper.MessageMapperTest - page = Page(currentPage=0, totalPage=2, totalNumber=4, datas=[Message(msgId=4, msgText=apple, msgSummary=水果), Message(msgId=5, msgText=orange, msgSummary=水果), Message(msgId=7, msgText=apple, msgSummary=水果)])
+2020-04-10 21:21:12.879[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-10 21:21:12.898[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
